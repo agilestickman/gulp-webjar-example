@@ -1,0 +1,40 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+toolbar, header, main, footer {
+     padding-left: 240px;
+ }
+
+a.button-collapse.top-nav {
+  text-align: center;
+  font-size: 32px;
+}
+
+ @media only screen and (max-width: 992px) {
+   header, main, footer {
+     padding-left: 0px;
+   }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 85%;
+  }
+}
+
+.search-wrapper input#jql {
+  width: 75%;
+}
+
+/**
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+*/

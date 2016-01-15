@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>AB Test</title>
+  <!-- CSS  -->
+  <link href="font/material-icons/material-icons.css" type="text/css" rel="stylesheet"/>
+  <!--build:css css/styles.min.css-->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+  <!-- endbuild -->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <!-- Header material -->
+  <header>
+    <!-- Nav Bar -->
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <h4>Welcome to AB demo v1.3.4.5.2-rc67!</h4>
+        <p>There's loads of new features like buttons, nice transitions, pastel colours
+          and things like that. Help us make your application better by taking some time
+          to trial the new features!</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Yes please!</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">No thanks.</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main application display -->
+    <main>
+      <div id="entry">
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+          <a class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#modal2">
+            <i class="large material-icons">mode_edit</i>
+          </a>
+        </div>
+        <!-- Modal Structure -->
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <nav class="red">
+              <div class="nav-wrapper">
+                <div class="left col s12 m5 l5">
+                  <ul>
+                    <li><a href="#!"><i class="modal-action modal-close  mdi-hardware-keyboard-backspace"></i></a>
+                    </li>
+                    <li><a href="#!">New Task</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="todo_task" type="text" class="validate">
+                    <label for="todo_task">Summary</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="details" class="materialize-textarea" length="500"></textarea>
+                    <label for="details">Detailed description</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+        </div>
+    </div>
+
+      </div>
+      <div id="display">
+      </div>
+
+    </main>
+    <!--build:js js/main.min.js -->
+    <script src="js/underscore-min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+
+
+  </body>
+  </html>
